@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Adoção</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="box">
+        <div class="campo-imagem">
+            <img src="imagens/sample1.png" class="imagem">
+            <img src="imagens/sample2.jpg" class="imagem">
+        </div>
+        <form action="#">
+            <fieldset class="campo-form">
+                <legend><b>Cadastro de Adoção</b></legend>
+                <div class="input-box">
+                    <input type="text" name="nome" id="nome" class="user" required>
+                    <label for="nome" class="label-input">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <input type="text" name="email" id="email" class="user" required>
+                    <label for="email" class="label-input">E-mail</label>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <input type="tel" name="tel" id="tel" class="user" required>
+                    <label for="tel" class="label-input">Telefone</label>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <p>Raça:</p>
+                    <select name="raca" id="raca" class="seleciona-raca">
+                        <option value="#">-Selecionar Raça-</option>
+                        <option value="husky">Husky Siberiano</option>
+                        <option value="golden">Golden Retriever</option>
+                        <option value="dobermann">Dobermann</option>
+                        <option value="lhasa">Lhasa apso</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <p>Sexo:</p>
+                    <input type="radio" name="genero" id="macho" value="macho">
+                    <label for="macho">Macho</label>
+                    <br>
+                    <input type="radio" name="genero" id="femea" value="femea">
+                    <label for="femea">Fêmea</label>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <input type="text" name="cidade" id="cidade" class="user" required>
+                    <label for="cidade" class="label-input">Cidade</label>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <input type="text" name="estado" id="estado" class="user" required>
+                    <label for="estado" class="label-input">Estado</label>
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <input type="text" name="endereco" id="endereco" class="user" required>
+                    <label for="endereco" class="label-input">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
